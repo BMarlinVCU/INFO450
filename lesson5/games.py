@@ -1,3 +1,4 @@
+import random
 def fun_game(die_sides):
   """This is a game to roll a die 5 times"""
   die_rolls=[random.randint(1,die_sides) for die in range(5)]

@@ -5,7 +5,7 @@ import plotly.express as px
 
 df=pd.read_csv("Advertising_F.csv")
 
-st.title("Advertising Effectiveness Marlin")
+st.title("Advertising Effectiveness Marlin This is Fun!!!!")
 st.sidebar.header("Filters")
 x_var=st.sidebar.selectbox("X Axis", ["TV","radio","newspaper"])
 

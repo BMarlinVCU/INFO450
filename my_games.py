@@ -11,7 +11,7 @@ import random
 
 def  fun_game(die_sides):
   """This function that roles a user defined die 5 times"""
-  die_rolls=[random.randint(1,die_rolls) for die in range(5)]
+  die_rolls=[random.randint(1,die_sides) for die in range(5)]
   return die_rolls
 
 def number_game():

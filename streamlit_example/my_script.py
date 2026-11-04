@@ -30,5 +30,5 @@ st.title("I'm the map!!!")
 fig=px.scatter_map(df,lat='latitude',lon='longitude',size='newspaper',
                       hover_name='City',color='sales',
                       color_continuous_scale=px.colors.sequential.Viridis)
-fig.update_layout(mapbox_style='carto-positron')
+fig.update_layout(map_style='carto-positron')
 st.plotly_chart(fig)

@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+
+
 df=pd.read_csv('Advertising_F.csv')
 st.title("Advertising Effectiveness Marlin")
 st.sidebar.header("Filters")
@@ -10,7 +12,7 @@ x_var=st.sidebar.selectbox("X axis",["TV","radio","newspaper"])
 y_var=st.sidebar.selectbox("Y Axis",["sales"])
 
 #show scatterplot
-fig=px.scatter(df,x=x_var,y=y_var)
+fig=px.scatter(df, x=x_var, y=y_var,labels={'TV': 'TV Ad Spend', 'radio': 'Radio Ad Spend'})
 st.plotly_chart(fig)
 #show bar chart
 sales_per_city = df.groupby('City')['sales'].sum().reset_index()
